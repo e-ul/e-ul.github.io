@@ -1,0 +1,17 @@
+current directory: /Volumes/workspace/Career/Github Blog/e-ul.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+/Users/mj/.rbenv/versions/3.0.3/bin/ruby -I /Users/mj/.rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220208-53866-i9uqnr.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Volumes/workspace/Career/Github Blog/e-ul.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /Volumes/workspace/Career/Github Blog/e-ul.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Volumes/workspace/Career/Github Blog/e-ul.github.io/vendor/bundle/ruby/3.0.0/gems/racc-1.6.0/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20220208-53866-kwztqp/racc
