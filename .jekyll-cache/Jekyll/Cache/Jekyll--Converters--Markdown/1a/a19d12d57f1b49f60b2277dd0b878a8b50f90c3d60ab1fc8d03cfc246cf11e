@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-09T14:27:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">e-ul</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>e-ul</name></author><entry><title type="html">GitHub 블로그 만들기🪄</title><link href="http://localhost:4000/blog/2022/02/09/blog-Creating-GitHub-Blog.html" rel="alternate" type="text/html" title="GitHub 블로그 만들기🪄" /><published>2022-02-09T00:00:00+09:00</published><updated>2022-02-09T00:00:00+09:00</updated><id>http://localhost:4000/blog/2022/02/09/%5Bblog%5D%20Creating%20GitHub%20Blog</id><content type="html" xml:base="http://localhost:4000/blog/2022/02/09/blog-Creating-GitHub-Blog.html"><![CDATA[<p>🪄 나도 만들었다 GitHub 블로그 ! ! !<br />
+I"	><p>🪄 나도 만들었다 GitHub 블로그 ! ! !<br />
 다시 만들 일은… 없을 것 같지만 기록은 해두기로 했다</p>
 
 <h2 id="1-github-계정-생성">1. GitHub 계정 생성</h2>
@@ -256,45 +256,5 @@ https://본인의계정명.github.io/<br />
   <p>다시 한 번 말하지만, 틀린 거 잘못된 거 있으면,, 지적해주세요..고칠게요..<br />
 하다가 잘 모르겠다 싶은 부분도 알려주세요. 함께 고민해봐요 해결해주겠다는 말은 아님☺️<br />
 모니터뒤에 사람 있어요. 꼽주지마 상처주지마 나 기죽으니까….</p>
-</blockquote>]]></content><author><name>e-ul</name></author><category term="Blog" /><category term="Blog" /><category term="GitHub" /><category term="Jekyll" /><category term="Ruby" /><summary type="html"><![CDATA[🪄 나도 만들었다 GitHub 블로그 ! ! ! 다시 만들 일은… 없을 것 같지만 기록은 해두기로 했다]]></summary></entry><entry><title type="html">1</title><link href="http://localhost:4000/log/2022/02/08/log-2-8-2022.html" rel="alternate" type="text/html" title="1" /><published>2022-02-08T00:00:00+09:00</published><updated>2022-02-08T00:00:00+09:00</updated><id>http://localhost:4000/log/2022/02/08/%5Blog%5D%202:8:2022</id><content type="html" xml:base="http://localhost:4000/log/2022/02/08/log-2-8-2022.html"><![CDATA[<p>📝이제까지 내가 해왔던 기록들은 정리되지 않아 쓰레기통에 버려지거나, 어딘가 처박혀 잊혀졌기때문에<br />
-현대문명을 사용해 기록하여 조금이라도… 남겨보고자 GitHub Pages 라는것을 만들어보았습니다…</p>
-
-<p>여러 블로그 플랫폼 중에 GitHub Pages 를 선택한 이유?</p>
-<ul>
-  <li>싫든 좋든 어쨌든 내가 개발자이긴한데 간죽간살 이게 제일 개발자스러우니까….</li>
-  <li>진입장벽이 있다고 하니까…어차피 할 거면 제대로 하는 걸 좋아하기때문에 진입장벽 뚫어보고 싶었음</li>
-</ul>
-
-<p>github 계정은 1월에 만들었지만, 새 맥북을 기다리고 있었는데<br />
-오늘 드디어 내돈내산 M1 Pro 맥북이 왔고(special Thx to. luvuluvul)<br />
-바로 github pages 부터 제대로 시작해보기로!</p>
-
-<p>그래서 내가 오늘 뭘 했냐면~<br />
-✔️  github Repository 만들기<br />
-✔️  jekyll theme 고르기<br />
-✔️  jekyll theme을 실행하고 나의 github page 배포를 위해 필요한 것들</p>
-<ol>
-  <li>ruby</li>
-  <li>jekyll</li>
-  <li>git</li>
-  <li>markdown</li>
-</ol>
-
-<p>✔️  그리고 지금 이 첫번째 포스트…뭐라도 적어보기</p>
-
-<p>위의 것들을 하면서 이것 저것 툴도 받고….(일단 완전 clean 새 mac이니까~~ 필수 tool들도 받고 환경설정도 좀 했다)</p>
-
-<p>하면서 자잘한 오류들을 이겨냈는데 이것도 적어두는게 좋겠지?<br />
-나는 뭐든 잘 잊으니까</p>
-
-<p>하지만 오늘은 지쳤으니 내일 마저하기로 한다.</p>
-
-<p>앞으로 할 일은<br />
-git 쓸 때마다 찾아보지 않고 쓸 수 있도록 git에 매우 익숙해지는 것,<br />
-이렇게 plain text만 써서 재미없지 않도록 markdown 문법에 익숙해지는 것</p>
-
-<p>블로그에 관련된 건 일단 이렇게 2개<br />
-난 체력없고 낡은 사람이니까 욕심내면 지친다<br />
-천천히 가야지</p>
-
-<p>그럼 이만~~🥲</p>]]></content><author><name>e-ul</name></author><category term="log" /><category term="log" /><summary type="html"><![CDATA[📝이제까지 내가 해왔던 기록들은 정리되지 않아 쓰레기통에 버려지거나, 어딘가 처박혀 잊혀졌기때문에 현대문명을 사용해 기록하여 조금이라도… 남겨보고자 GitHub Pages 라는것을 만들어보았습니다…]]></summary></entry></feed>
+</blockquote>
+:ET
