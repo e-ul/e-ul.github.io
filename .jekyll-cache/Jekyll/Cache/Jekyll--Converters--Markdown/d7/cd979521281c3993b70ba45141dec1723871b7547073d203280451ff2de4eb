@@ -1,0 +1,108 @@
+I"�<p>gitHub Page 포스팅을 위해서 첫 포스팅날 강제로 Git 공부를 좀 하고,,,<br />
+이걸 기록을 해놔야겠다고 생각은 했는데 아무래도 나는 갓생러😉✨다보니^~^ 다른 일들에 밀려 좀 늦었다<br />
+하지만 안 하는 것보다는 낫잖아요하하</p>
+
+<p><em>아래의 모든 것은 Mac에서 진행되었습니다</em></p>
+
+<ol>
+  <li>
+    <p>Git 시작하기(설치하기)
+ Mac 유저라면,,,HomeBrew 설치 바랍니다..정말 너무 편하거든요… 그래서 gitHub Blog 만들기에서 그랬듯이 HomeBrew 있다고 믿고 시작한다!</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> brew install git
+ git --version
+</code></pre></div>    </div>
+    <p>homebrew를 설치해뒀다면 terminal을 열고 위 command만 입력하면 git 설치는 끝!
+ 설치 잘 되었는지 git –version 입력해서 확인 한 번 해줍니다</p>
+
+    <p>GitHub에서 Repository를 생성하고 사용해 본다면 GitHub이 아래와 같이 친절하게☺️ 가이드를 준답니다</p>
+
+    <ul>
+      <li>Git Repository를 처음 생성했을 때
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git init
+ git add .
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/your_name/your_Repo_name.git
+ git push -u origin main
+</code></pre></div>        </div>
+      </li>
+    </ul>
+
+    <p>git init : git initialize</p>
+
+    <p>git add . : git stage에 파일 추가. git add . 에서 “ . “ 의 의미는 현재 directory 아래의 모든 파일이라는 뜻이다. 특정 파일만 지정하고 싶으면 . 자리에 파일명을 입력해 주면 됨
+ git commit -m “commit message” : stage에 올린 파일 commit
+ git branch -M main : 브랜치를 생성한다.</p>
+
+    <blockquote>
+      <p>Git은 원래 기본 Branch명이 master였으나, master/slave 용어 사용을 지양하려는 움직임으로 기본 브랜치 이름을 main으로 변경하였다. 너무 좋은 변화😌</p>
+    </blockquote>
+
+    <p>git remote add origin URL : 원격저장소와의 연결
+ git push -u origin main : 원격저장소에 commit내용 push</p>
+
+    <ul>
+      <li>기 생성된 Repository를 사용할 때
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git remote add origin https://github.com/your_name/your_Repo_name.git
+ git branch -M main
+ git push -u origin main
+</code></pre></div>        </div>
+        <p>이미 있는 Repository를 사용하는 건 훨씬 간단!</p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Git Config 확인하고 설정하기
+ 사실 별 것 안 하고 곱게 add, commit, push만 한다면 Config에 신경 쓸 필요없을 것 같기도 하다.
+ 하지만 난 ⇩3번의 이슈가 있었기 때문에…알아두면 좋겠다고 생각했음</p>
+
+    <p>🪄나의 git 설정정보 알아보기</p>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git config --list
+ git config --global --list
+</code></pre></div>    </div>
+    <p>git에 연결한 폴더에서 보면 해당 git에 대한 config를 볼 수 있고 git에 연결하지 않은 폴더에서 보면 global config만 보인다<br />
+ git에 연결된 폴더에서도 global config만 보고  싶으면 –global 옵션만 붙여주면 됨.</p>
+  </li>
+  <li>Git user, commit한 author 변경하기
+    <ol>
+      <li>
+        <p>Git Config의 user를 변경하기
+ 나의 경우, gitHub에 commit한 author이름을 바꾸고 싶었다… config를 확인하지 않고 올렸더니 내 컴퓨터 설정이름대로 올라가더라구,,, gitHub 계정명이랑 통일하고 싶었기때문에 config변경이 필요했다.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git config --global user.name "e-ul"
+ git config --global user.email e-ul@mail.me
+</code></pre></div>        </div>
+
+        <p>나는 모든 repository에서 e-ul이라는 이름을 쓰고자 했기때문에 –global 옵션을 주고 변경했고 repository별로 다른 이름 사용하고 싶을 땐 –global 옵션만 빼주면 된다</p>
+
+        <p>하지만 이렇게 config만 변경하면 내가 앞으로 push할 commit들의 이름만 변경된 것으로 올라간다.
+ 전 통일감을 중시하기때문에 이미 commit된 것들도 author를 수정하고 싶었어요</p>
+      </li>
+      <li>
+        <p>Commit의 author 변경
+ git rebase를 사용하여 나의 Commit History를 변경하는 방법이다
+ rebase는 Branch를 병합하는데 사용되는 명령어인데…이 개념은 다음에 알아보기로 하고…<del>(포스트 하나 쓸 때마다 다음 쓸 포스트 주제가 생기는게 뭔가,,,무한확장하는 과제 같고..ㅠ)</del> 일단은 결과만 얻어내 보겠습니다.</p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git rebase -i HEAD~3
+</code></pre></div>        </div>
+        <p>수정하고 싶은 commit이 나올때까지 HEAD~뒤의 숫자를 조정해준다.</p>
+
+        <p>아래와 같은 화면이 뜰 텐데 I를 눌러 편집모드로 전환해준 뒤, 변경하고자하는 commitID 앞의 pick –&gt; e 로 변경한다.
+아래 캡쳐에서 보면 알겠지만, e는 edit commit이다.
+ <img src="https://user-images.githubusercontent.com/98747932/155332482-8ef33b45-8027-4ff3-ae65-1c424c10669e.png" alt="git Rebase" /></p>
+
+        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git commit --amend --author="e-ul &lt;e-ul@mail.me&gt;"
+ git rebase --continue
+ git push -f origin main
+</code></pre></div>        </div>
+        <p>위와 같이 –author=”사용자명 <이메일주소>" 형식으로 옵션을 주고 commit / rebase continue / push 해주면 commit author가 바뀐 것을 확인할 수 있다.</이메일주소></p>
+      </li>
+    </ol>
+  </li>
+  <li>GitHub Commit은 했는데 잔디가 심어지지 않는다?
+author까지 바꿔가면서 commit 해뒀는데….며칠 후에 보니 잔디가 하나도 심어지지 않고 있는 것을 확인했다…
+잠시 농장주의 꿈을 꿨는데….황량한 나의 밭을 보며…<del>(몇 번 심지도 않음)</del> 솜사탕 씻은 너구리가 되고 마는데<br />
+결론은… 또 rebase 야무지게 사용해서 GitHub 잔디밭과 원만히 합의 봤습니다🤓. 이쯤되면 rebase를 제대로 정리해야겠다는 필요성이 느껴지기 때문에,,,Git 2편으로 다시 돌아오기를 약속하면서…이만 끝</li>
+</ol>
+:ET
