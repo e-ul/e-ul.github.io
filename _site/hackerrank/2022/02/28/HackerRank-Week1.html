@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>HackerRank - Week1 ( 3 Months Preparation Kit ) | e-ul</title>
+<meta name="generator" content="Jekyll v4.2.1">
+<meta property="og:title" content="HackerRank - Week1 ( 3 Months Preparation Kit )">
+<meta name="author" content="e-ul">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="알고리즘 연습하기로 했다. 고객님 요구사항 개발만 하다보니 자꾸 뭔가를 잊어가는 것 같다. 종종 풀어서 기록해야지. 나중에 보면 뭔가 계속 했단 사실만으로도 좀 뿌듯할 것 같다. 얼마나 할 수 있을까 3개월 다 채워서 할 수 있는 사람 되고싶다,,,">
+<meta property="og:description" content="알고리즘 연습하기로 했다. 고객님 요구사항 개발만 하다보니 자꾸 뭔가를 잊어가는 것 같다. 종종 풀어서 기록해야지. 나중에 보면 뭔가 계속 했단 사실만으로도 좀 뿌듯할 것 같다. 얼마나 할 수 있을까 3개월 다 채워서 할 수 있는 사람 되고싶다,,,">
+<link rel="canonical" href="http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html">
+<meta property="og:url" content="http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html">
+<meta property="og:site_name" content="e-ul">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-02-28T00:00:00+09:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="HackerRank - Week1 ( 3 Months Preparation Kit )">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"e-ul"},"dateModified":"2022-02-28T00:00:00+09:00","datePublished":"2022-02-28T00:00:00+09:00","description":"알고리즘 연습하기로 했다. 고객님 요구사항 개발만 하다보니 자꾸 뭔가를 잊어가는 것 같다. 종종 풀어서 기록해야지. 나중에 보면 뭔가 계속 했단 사실만으로도 좀 뿌듯할 것 같다. 얼마나 할 수 있을까 3개월 다 채워서 할 수 있는 사람 되고싶다,,,","headline":"HackerRank - Week1 ( 3 Months Preparation Kit )","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html"},"url":"http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="e-ul">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header " role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/">
+  <img class="site-favicon" title="e-ul" src="" onerror="this.style.display='none'">
+  e-ul
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/about.html">ABOUT</a><a class="page-link" href="/archives.html">ARCHIVES</a><a class="page-link" href="/categories.html">CATEGORIES</a><a class="page-link" href="/">HOME</a><a class="page-link" href="/tags.html">TAGS</a>
+
+
+
+
+
+
+
+
+
+<span class="page-link">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<span class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="en">
+          
+          <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="fr">
+          
+          <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="zh-CN">
+          
+          <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ja">
+          
+          <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ko">
+          
+          <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+          
+        </a>
+      </li>
+    
+      <li>
+        <a href="#" class="lang-select" data-lang="ru">
+          
+          <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+          
+        </a>
+      </li>
+    
+  </ul>
+</span>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    autoDisplay: false,
+    layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+  }, 'google_translate_element');
+
+  // Links to cross-origin destinations are unsafe
+  var gll = document.getElementsByClassName('goog-logo-link')[0];
+  if (gll) {
+    gll.setAttribute('rel', 'noopener');
+  }
+
+  function restoreLang() {
+    var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+    if (!iframe) return;
+
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    var restore_el = innerDoc.getElementsByTagName("button");
+
+    for (var i = 0; i < restore_el.length; i++) {
+      if (restore_el[i].id.indexOf("restore") >= 0) {
+        restore_el[i].click();
+        var close_el = innerDoc.getElementsByClassName("goog-close-link");
+        close_el[0].click();
+        return;
+      }
+    }
+  }
+
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
+
+  var googleCombo = document.querySelector("select.goog-te-combo");
+  var langSelect = document.querySelector('.ct-language');
+  langSelect.addEventListener('click', function(event) {
+    if (!event.target) {
+      return;
+    }
+
+    var selected = document.querySelector('.ct-language .ct-language-selected');
+    if (selected) {
+      selected.classList.remove('ct-language-selected');
+    }
+
+    var target = event.target;
+    while (target && target !== langSelect ) {
+      if (target.matches('.lang-select')) {
+        break;
+      }
+      target = target.parentElement;
+    }
+
+    if (target && target.matches('.lang-select')) {
+      var lang = target.getAttribute('data-lang');
+      if (googleCombo.value == lang) {
+        restoreLang();
+      } else {
+        target.parentElement.classList.add('ct-language-selected');
+        googleCombo.value = lang;
+        triggerHtmlEvent(googleCombo, 'change');
+      }
+    }
+
+    event.preventDefault();
+  });
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</span>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">HackerRank - Week1 ( 3 Months Preparation Kit )</h1>
+  <h2 class="post-subtitle">말랑말랑 뇌운동</h2>
+
+  <p class="post-meta">
+    <time class="dt-published" datetime="2022-02-28T00:00:00+09:00" itemprop="datePublished"><i class="fa fa-calendar"></i> Feb 28, 2022
+    </time>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 7 mins</span>
+  </p>
+<div class="post-tags">
+<a class="post-tag" href="/tags.html#HackerRank">#HackerRank</a><a class="post-tag" href="/tags.html#Algorithm">#Algorithm</a>
+</div></header>
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <div class="post-content e-content" itemprop="articleBody">
+
+      <p>알고리즘 연습하기로 했다.<br>
+고객님 요구사항 개발만 하다보니 자꾸 뭔가를 잊어가는 것 같다. 종종 풀어서 기록해야지. 나중에 보면 뭔가 계속 했단 사실만으로도 좀 뿌듯할 것 같다. 얼마나 할 수 있을까 3개월 다 채워서 할 수 있는 사람 되고싶다,,,</p>
+
+<h2 id="1-breaking-the-records">1. Breaking the Records</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892666-064d794d-5ad3-4f56-ad00-fcb80d4dbee6.png" alt="image"></p>
+
+<p>농구선수의 기록 갱신 횟수 구하기 문제.</p>
+
+<p>시즌의 첫 게임 기록을 기준으로 최저점 갱신 횟수와 최고점 갱신횟수를 구해야하는 문제였다.</p>
+
+<p>첫 게임이 기준이기 때문에 첫 게임(index 0) 점수를 min,max 값으로 처리하고 index 1부터 scores를 선형 탐색으로 처리했다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892727-8a80116f-cff7-4b6b-9f18-b46d0d501ac1.png" alt="image"></p>
+
+<p><del>근데 해커랭크는 다른 사람 풀이 못보나…난 항상 다른 답도 궁금한데…</del></p>
+
+<p>일단은 처음 준비하는거고 난 좀 쫄보라 자신감이 필요하니 통과율 높은 것부터 풀어야지…</p>
+
+<h2 id="2-sparse-arrays">2. Sparse Arrays</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892745-9f1c1fa0-0555-42c9-b28b-5a75aa463ea9.png" alt="image"></p>
+
+<p>strings 배열에서 queries 배열과 완전히 같은 요소의 수를 구하는 문제.</p>
+
+<p>나는 두가지 방법으로 풀었다.</p>
+
+<ol>
+  <li>
+    <p>Array를 사용해서 matchCnt를 넣은 뒤, return할 때 List<integer> 타입으로 변환</integer></p>
+
+    <p><img src="https://user-images.githubusercontent.com/98747932/155892818-68a93be1-fb08-4a59-8050-235989f0eb65.png" alt="image"></p>
+  </li>
+  <li>
+    <p>return 할 List<integer> 타입을 먼저 선언한 뒤 matchCnt를 List에 add</integer></p>
+
+    <p><img src="https://user-images.githubusercontent.com/98747932/155892765-dbc3a7ef-fa87-463b-a7fe-4399bc92f6c6.png" alt="image"></p>
+  </li>
+</ol>
+
+<p>형변환을 이런저런 방식으로 할 줄 아는 것도 중요하니까 다 해봐야지…</p>
+
+<p>어떤 게 좋은 방식인지는 무슨 기준으로 판단하는 걸까,,,</p>
+
+<h2 id="3-divisible-sum-pairs">3. Divisible Sum Pairs</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892839-e122d96c-3704-410c-a142-6e490a7894c5.png" alt="image"></p>
+
+<p>n개의 요소로 이루어진 배열 ar에서 k로 나누어 떨어지는 두 숫자의 조합을 찾는 문제.</p>
+
+<p>두 index의 조합의 조건이 i &lt; j 이므로 같은 index의 조합이나, 순서만 뒤집어진 조합은 제외</p>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892861-6ee4f119-4959-4dd5-a894-79067bfed7e1.png" alt="image"></p>
+
+<p>나는 그냥 중첩 for문을 이용해서 풀었다.</p>
+
+<p>나는 문제에 주어진 그대로 두 숫자의 합을 k로 나눠 떨어지는 지만을 생각했는데, discussion을 보니 혹자는 하나의 숫자만을 이용하여 k로 나누어 떨어지게 할 수 있는 숫자를 구하고 ar에서 해당 숫자가 있는 지를 찾더라..</p>
+
+<p>그 과정에서 Map도 사용하고,,,</p>
+
+<p>풀었어도 discussion 보면서 다른 사람들의 생각도 한번씩 들여다보는 것도 좋은 듯하다</p>
+
+<h2 id="4-time-conversion">4. Time Conversion</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892881-54966f76-5fd9-414f-8b46-bddfdd8ef184.png" alt="image"></p>
+
+<p>12시간 format의 시각을 24 format으로 변경하는 문제</p>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892886-bc09d463-45f1-4978-b3bf-dfe571f29f1e.png" alt="image"></p>
+
+<p>+ 연산자는 String과 만나면 문자열 결합으로 사용된다. int 와 결합시에도 자동 형변환이 일어나 int → String으로 쉽게 형변환 할 수 있다.</p>
+
+<p>형변환 맨날 까먹으니까 관련된거 나올 때 마다 써야지</p>
+
+<ul>
+  <li>String → int
+    <ol>
+      <li>
+        <p>Integer.parseInt(str)</p>
+
+        <p><em>int (primitive Type) 반환</em></p>
+      </li>
+      <li>
+        <p>Integer.valueOf(str)</p>
+
+        <p><em>Integer 반환</em></p>
+      </li>
+    </ol>
+  </li>
+  <li>int → String
+    <ol>
+      <li>Integer.toString()</li>
+      <li>String.valueOf()</li>
+      <li>
+        <p>+ “”</p>
+
+        <p>→ 빈 문자열을 더해줌으로써 자동 형변환이 일어나도록 함</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<p>+) 아무래도 나는 java를 쓰니까 java 내장함수를 사용하는 게 좋았을까?
+<img src="https://user-images.githubusercontent.com/98747932/155892900-cb66cd9c-5acf-419d-9e8d-aa2248a7b86d.png" alt="image"></p>
+
+<h2 id="5-mini-max-sum">5. Mini-Max Sum</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892913-ada310d4-0fbb-4278-bb31-7791b50fc03f.png" alt="image"></p>
+
+<p>주어진 5개의 숫자 중 4개의 합으로 만들 수 있는 최소값, 최대값 구하는 문제.</p>
+
+<p>5개 숫자의 총합에서 최대값, 최소값을 빼는 방법으로 풀었다.</p>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892925-966c9278-474d-4eeb-806a-587b9794a724.png" alt="image"></p>
+
+<p>정렬도 할 때마다 긴가민가한다… 정렬 문제 많이많이 풀어보기,,,</p>
+
+<p>그리고 min,max는 java Math 함수써도 될 것 같다. 이번 문제는 요소가 5개인데 많아지면,,,,정렬이 낫나 minmax가 낫나…….?</p>
+
+<h2 id="6-plus-minus">6. Plus Minus</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155892973-c163680c-827d-4dc2-a434-f75877aa86ca.png" alt="image"></p>
+
+<p>주어진 배열 요소 중 양수,음수,0 비율 구하는 문제</p>
+
+<p>소수점 아래 6자리로 만들어서 출력해야했다</p>
+
+<p>소수점이 가능한 자료형은 float(32bit), double(64bit)이 있는데 그냥 아무생각없이 double로 사용했다…</p>
+
+<p>낭비했네..쩝 생각 한 번만 더 할 걸…</p>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155893001-6f72b0eb-e048-4916-bc45-bb9402a0f9a4.png" alt="image"></p>
+
+<p>그리고 소수점 아래 자릿수 고정할 땐 String.format 사용하기 잊지말기~</p>
+
+<h2 id="7-camel-case-4">7. Camel Case 4</h2>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155893013-17958b37-accc-4344-bcb3-0e43f100aab1.png" alt="image"></p>
+
+<p><img src="https://user-images.githubusercontent.com/98747932/155893024-b056b03a-c3a7-4395-a320-792d1e91cc19.png" alt="image"></p>
+
+<p>앗 너무 방심했다</p>
+
+<p>키보드 입력받는 건 너무 옛 일이라 다 잊었는데,,,,키보드 입력을 받으라니,,,,</p>
+
+<p>암튼, 입력받은 text에 따라 Camel표기법 일반 text 표기법 양방향으로 변환하는 문제.</p>
+
+<ol>
+  <li>세미콜론(;)기준으로 첫번째 글자
+    <ul>
+      <li>S : split 대상. Camel표기법을 일반 Text로 바꿔야함</li>
+      <li>C : combine 대상. 일반 표기법을 Camel 표기법으로 바꿔야함</li>
+    </ul>
+  </li>
+  <li>세미콜론(;)기준으로 두번째 글자
+    <ul>
+      <li>M : Method 형식</li>
+      <li>C : Class 형식</li>
+      <li>V : Variable 형식</li>
+    </ul>
+  </li>
+</ol>
+
+<p>일단 나는 두 번,,,당황했는데 console입력을 받아서 하는 건 안 써먹은지 오래라 당황했다…</p>
+
+<p>hackerRank내 다른 문제들 다 입력받아서 하는 부분이 main에서 이미 구현되어있어서 잘 안 보고 넘어왔는데,,잘 봐둘걸,,,생각했고😞 while 문 없이 입력을 받았더니 한 줄만 받고 끝나버렸다</p>
+
+<p>그리고 대소문자 변경도 단어단위로나 해봤지 한 글자씩??은 좀 당황스러웠다..String에서 charAt으로 한글자씩 확인해서 바꿨는데,,,잘한걸까ㅠ</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="nc">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="nc">IOException</span> <span class="o">{</span>
+    <span class="cm">/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */</span>
+
+    <span class="nc">BufferedReader</span> <span class="n">bufferedReader</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="nc">InputStreamReader</span><span class="o">(</span><span class="nc">System</span><span class="o">.</span><span class="na">in</span><span class="o">));</span>
+    <span class="nc">String</span> <span class="n">inputText</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+    <span class="k">while</span><span class="o">((</span><span class="n">inputText</span> <span class="o">=</span> <span class="n">bufferedReader</span><span class="o">.</span><span class="na">readLine</span><span class="o">())</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span>
+    <span class="o">{</span>
+<span class="n">camelCase</span><span class="o">(</span><span class="n">inputText</span><span class="o">);</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+
+<span class="kd">static</span> <span class="kt">void</span> <span class="nf">camelCase</span><span class="o">(</span><span class="nc">String</span> <span class="n">inputText</span><span class="o">)</span> <span class="o">{</span>
+    <span class="nc">String</span><span class="o">[]</span> <span class="n">aInput</span> <span class="o">=</span> <span class="n">inputText</span><span class="o">.</span><span class="na">split</span><span class="o">(</span><span class="s">";"</span><span class="o">);</span>
+    <span class="nc">String</span> <span class="n">output</span> <span class="o">=</span> <span class="s">""</span><span class="o">;</span>
+
+    <span class="k">if</span><span class="o">(</span><span class="s">"S"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">aInput</span><span class="o">[</span><span class="mi">0</span><span class="o">]))</span> <span class="o">{</span>
+        <span class="c1">// 대문자 기준으로 띄어쓰기 후 소문자로 변환</span>
+
+        <span class="c1">// Method의 경우 괄호 생략 처리</span>
+        <span class="k">if</span><span class="o">(</span><span class="s">"M"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">aInput</span><span class="o">[</span><span class="mi">1</span><span class="o">])){</span>
+            <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">length</span><span class="o">()-</span><span class="mi">2</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="c1">// 첫 글자 빼고 대문자 앞 띄어쓰기</span>
+        <span class="n">output</span> <span class="o">+=</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">charAt</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">length</span><span class="o">()</span> <span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="kt">char</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+
+            <span class="k">if</span><span class="o">(</span><span class="nc">Character</span><span class="o">.</span><span class="na">isUpperCase</span><span class="o">(</span><span class="n">tmp</span><span class="o">)){</span>
+                <span class="n">output</span> <span class="o">+=</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">tmp</span><span class="o">;</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="n">output</span> <span class="o">+=</span> <span class="n">tmp</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="c1">// 다른 경우에는 추가로 처리할 것 없음</span>
+
+        <span class="n">output</span> <span class="o">=</span> <span class="n">output</span><span class="o">.</span><span class="na">toLowerCase</span><span class="o">(</span><span class="nc">Locale</span><span class="o">.</span><span class="na">ROOT</span><span class="o">);</span>
+
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span> <span class="c1">//C</span>
+        <span class="c1">// 띄어쓰기 뒷문자 대문자로 변환 후 띄어쓰기 생략</span>
+        <span class="kt">boolean</span> <span class="n">isCapital</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">length</span><span class="o">()</span> <span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+            <span class="kt">char</span> <span class="n">tmp</span> <span class="o">=</span> <span class="n">aInput</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">charAt</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+
+            <span class="k">if</span><span class="o">(</span><span class="nc">Character</span><span class="o">.</span><span class="na">isSpaceChar</span><span class="o">(</span><span class="n">tmp</span><span class="o">)){</span>
+                <span class="n">output</span> <span class="o">+=</span> <span class="s">""</span><span class="o">;</span>
+                <span class="n">isCapital</span> <span class="o">=</span> <span class="kc">true</span><span class="o">;</span>
+            <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">isCapital</span><span class="o">){</span>
+                    <span class="n">output</span> <span class="o">+=</span> <span class="o">(</span><span class="s">""</span><span class="o">+</span><span class="n">tmp</span><span class="o">).</span><span class="na">toUpperCase</span><span class="o">(</span><span class="nc">Locale</span><span class="o">.</span><span class="na">ROOT</span><span class="o">);</span>
+                    <span class="n">isCapital</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
+                <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+                    <span class="n">output</span> <span class="o">+=</span> <span class="n">tmp</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="c1">// Method의 경우 끝에 괄호 추가, class의 경우 맨 앞 글자 대문자 전환</span>
+        <span class="k">if</span><span class="o">(</span><span class="s">"M"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">aInput</span><span class="o">[</span><span class="mi">1</span><span class="o">])){</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="n">output</span> <span class="o">+</span> <span class="s">"()"</span><span class="o">;</span>
+        <span class="o">}</span> <span class="k">else</span> <span class="k">if</span> <span class="o">(</span><span class="s">"C"</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">aInput</span><span class="o">[</span><span class="mi">1</span><span class="o">])){</span>
+            <span class="n">output</span> <span class="o">=</span> <span class="o">(</span><span class="s">""</span><span class="o">+</span><span class="n">output</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="mi">0</span><span class="o">)).</span><span class="na">toUpperCase</span><span class="o">(</span><span class="nc">Locale</span><span class="o">.</span><span class="na">ROOT</span><span class="o">)</span> <span class="o">+</span> <span class="n">output</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+        <span class="o">}</span>
+        <span class="c1">// V는 추가로 처리할 것 없음</span>
+    <span class="o">}</span>
+
+    <span class="nc">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">output</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>풀어서 통과했는데도 더 나은 방법이 있지 않을까 아쉬워서 자꾸 생각하게 된다…흠…</p>
+
+
+    </div>
+
+</article>
+<div class="post-nav">
+<a class="previous" href="/git/2022/02/23/Git-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.html" title="Git 시작하기">Git 시작하기</a><span></span>
+</div>
+<div class="post-related">
+      <div>Related Articles</div>
+      <ul>
+        <li><a class="post-link" href="/blog/2022/02/09/blog-Creating-GitHub-Blog.html" title="">GitHub 블로그 만들기🪄</a></li>
+<li><a class="post-link" href="/git/2022/02/23/Git-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0.html" title="">Git 시작하기</a></li>
+<li><a class="post-link" href="/log/2022/02/08/log-2-8-2022.html" title="">1</a></li>
+<li><a class="post-link" href="/hackerrank/2022/02/28/HackerRank-Week1.html" title="">HackerRank - Week1 ( 3 Months Preparation Kit )</a></li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --><style type="text/css" media="screen">
+.post-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+</style>
+
+<div class="post-menu">
+  <div class="post-menu-title">TOC</div>
+  <div class="post-menu-content"></div>
+</div>
+
+<script>
+  function generateContent() {
+    var menu = document.querySelector(".post-menu");
+    var menuContent =  menu.querySelector(".post-menu-content");
+    var headings = document.querySelector(".post-content").querySelectorAll("h2, h3, h4, h5, h6");
+
+    // Hide menu when no headings
+    if (headings.length === 0) {
+      return menu.style.display = "none";
+    }
+
+    // Generate post menu
+    var menuHTML = '';
+    for (var i = 0; i < headings.length; i++) {
+      var h = headings[i];
+      menuHTML += (
+        '<li class="h-' + h.tagName.toLowerCase() + '">'
+        + '<a href="#h-' + h.getAttribute('id') + '">' + h.textContent + '</a></li>');
+    }
+
+    menuContent.innerHTML = '<ul>' + menuHTML + '</ul>';
+
+    // The header element
+    var header = document.querySelector('header.site-header');
+
+    function doMenuCollapse(index, over_items) {
+      var items = menuContent.firstChild.children;
+
+      if (over_items == undefined) {
+        over_items = 20;
+      }
+
+      if (items.length < over_items) {
+        return;
+      }
+
+      var activeItem = items[index];
+      var beginItem = activeItem
+      var endItem = activeItem
+      var beginIndex = index;
+      var endIndex = index + 1;
+      while (beginIndex >= 0
+        && !items[beginIndex].classList.contains('h-h2')) {
+        beginIndex -= 1;
+      }
+      while (endIndex < items.length
+        && !items[endIndex].classList.contains('h-h2')) {
+        endIndex += 1;
+      }
+      for (var i = 0; i < beginIndex; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+      for (var i = beginIndex + 1; i < endIndex; i++) {
+        item = items[i]
+        // if (!item.classList.contains('h-h2')) {
+          item.style.display = '';
+        // }
+      }
+      for (var i = endIndex; i < items.length; i++) {
+        item = items[i]
+        if (!item.classList.contains('h-h2')) {
+          item.style.display = 'none';
+        }
+      }
+    }
+
+    // Init menu collapsed
+    doMenuCollapse(-1);
+
+    // Active the menu item
+    window.addEventListener('scroll', function (event) {
+      var lastActive = menuContent.querySelector('.active');
+      var changed = true;
+      var activeIndex = -1;
+      for (var i = headings.length - 1; i >= 0; i--) {
+        var h = headings[i];
+        var headingRect = h.getBoundingClientRect();
+        var headerRect = header.getBoundingClientRect();
+        var headerTop = Math.floor(headerRect.top);
+        var headerHeight = Math.floor(headerRect.height);
+        var headerHeight = headerTop + headerHeight + 20;
+        if (headingRect.top <= headerHeight) {
+          var id = 'h-' + h.getAttribute('id');
+          var a = menuContent.querySelector('a[href="#' + id  + '"]');
+          var curActive = a.parentNode;
+          if (curActive) {
+            curActive.classList.add('active');
+            activeIndex = i;
+          }
+          if (lastActive == curActive) {
+            changed = false;
+          }
+          break;
+        }
+      }
+      if (changed) {
+        if (lastActive) {
+          lastActive.classList.remove('active');
+        }
+        doMenuCollapse(activeIndex);
+      }
+      event.preventDefault();
+    });
+  }
+  generateContent();
+</script>
+</section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>Unpublished Work <span class="copyleft">©</span> 2017-2022 e-ul</div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="http://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

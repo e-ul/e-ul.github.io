@@ -1,0 +1,42 @@
+I"�	<p>알고리즘 연습하기로 했다.<br />
+고객님 요구사항 개발만 하다보니 자꾸 뭔가를 잊어가는 것 같다. 종종 풀어서 기록해야지. 나중에 보면 뭔가 계속 했단 사실만으로도 좀 뿌듯할 것 같다. 얼마나 할 수 있을까 3개월 다 채워서 할 수 있는 사람 되고싶다,,,</p>
+
+<h2 id="1-breaking-the-records">1. Breaking the Records</h2>
+
+<p><img src="1%20Breaking%20bb7a8/Screen_Shot_2022-02-26_at_2.20.31_PM.png" alt="Screen Shot 2022-02-26 at 2.20.31 PM.png" /></p>
+
+<p>농구선수의 기록 갱신 횟수 구하기 문제.</p>
+
+<p>시즌의 첫 게임 기록을 기준으로 최저점 갱신 횟수와 최고점 갱신횟수를 구해야하는 문제였다.</p>
+
+<p>첫 게임이 기준이기 때문에 첫 게임(index 0) 점수를 min,max 값으로 처리하고 index 1부터 scores를 선형 탐색으로 처리했다.</p>
+
+<p><img src="1%20Breaking%20bb7a8/Screen_Shot_2022-02-26_at_2.23.31_PM.png" alt="Screen Shot 2022-02-26 at 2.23.31 PM.png" /></p>
+
+<p><del>근데 해커랭크는 다른 사람 풀이 못보나…난 항상 다른 답도 궁금한데…</del></p>
+
+<p>일단은 처음 준비하는거고 난 좀 쫄보라 자신감이 필요하니 통과율 높은 것부터 풀어야지…</p>
+
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/db9cf8f3-5333-431a-9803-d792ae30311a/Screen_Shot_2022-02-26_at_2.51.33_PM.png" alt="Screen Shot 2022-02-26 at 2.51.33 PM.png" /></p>
+
+<p>strings 배열에서 queries 배열과 완전히 같은 요소의 수를 구하는 문제.</p>
+
+<p>나는 두가지 방법으로 풀었다.</p>
+
+<ol>
+  <li>
+    <p>Array를 사용해서 matchCnt를 넣은 뒤, return할 때 List<Integer> 타입으로 변환</Integer></p>
+
+    <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8d075ede-a403-481e-a05b-ed108b33f319/Screen_Shot_2022-02-26_at_2.56.10_PM.png" alt="Screen Shot 2022-02-26 at 2.56.10 PM.png" /></p>
+  </li>
+  <li>
+    <p>return 할 List<Integer> 타입을 먼저 선언한 뒤 matchCnt를 List에 add</Integer></p>
+
+    <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ea340f8e-8349-4e83-877a-0a741b2a50b4/Screen_Shot_2022-02-26_at_2.57.23_PM.png" alt="Screen Shot 2022-02-26 at 2.57.23 PM.png" /></p>
+  </li>
+</ol>
+
+<p>형변환을 이런저런 방식으로 할 줄 아는 것도 중요하니까 다 해봐야지…</p>
+
+<p>어떤 게 좋은 방식인지는 무슨 기준으로 판단하는 걸까,,,</p>
+:ET
