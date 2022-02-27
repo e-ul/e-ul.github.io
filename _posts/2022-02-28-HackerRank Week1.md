@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HackerRank - Week1 ( 3 Months Preparation Kit )"
+title: HackerRank - 3 Months Preparation Kit Week1
 subtitle: 말랑말랑 뇌운동
 categories: HackerRank
 tags: [HackerRank, Algorithm]
