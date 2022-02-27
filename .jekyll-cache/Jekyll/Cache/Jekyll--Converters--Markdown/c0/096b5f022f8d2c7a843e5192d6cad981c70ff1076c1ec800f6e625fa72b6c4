@@ -206,7 +206,7 @@ gem install jekyll bundler // jekyll bundler 따로도 설치해보고...
 
 cd /volumes/workspace/GitHub\ Blog/e-ul.github.io // 다시 소스있는 폴더로 돌아와서~
 
-jekyll exec jekyll serve // 실행!!!
+bundle exec jekyll serve // 실행!!!
 </code></pre></div></div>
 
 <p>하지만 또 안 되었습니다.<br />
@@ -224,7 +224,7 @@ jekyll exec jekyll serve // 실행!!!
 <p>제가 자꾸 실패해봐서 지치셨나요? 그럴수도 있죠<br />
 하지만 이번엔 진짜입니다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll exec jekyll serve // 실행!!!
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve // 실행!!!
 </code></pre></div></div>
 
 <p>아마 이번에는 떴을거에요…<br />

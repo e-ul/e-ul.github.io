@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-28T02:34:44+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">e-ul</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>e-ul</name></author><entry><title type="html">HackerRank - Week1 ( 3 Months Preparation Kit )</title><link href="http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html" rel="alternate" type="text/html" title="HackerRank - Week1 ( 3 Months Preparation Kit )" /><published>2022-02-28T00:00:00+09:00</published><updated>2022-02-28T00:00:00+09:00</updated><id>http://localhost:4000/hackerrank/2022/02/28/HackerRank%20Week1</id><content type="html" xml:base="http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html"><![CDATA[<p>알고리즘 연습하기로 했다.<br />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-02-28T02:41:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">e-ul</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>e-ul</name></author><entry><title type="html">HackerRank - Week1 ( 3 Months Preparation Kit )</title><link href="http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html" rel="alternate" type="text/html" title="HackerRank - Week1 ( 3 Months Preparation Kit )" /><published>2022-02-28T00:00:00+09:00</published><updated>2022-02-28T00:00:00+09:00</updated><id>http://localhost:4000/hackerrank/2022/02/28/HackerRank%20Week1</id><content type="html" xml:base="http://localhost:4000/hackerrank/2022/02/28/HackerRank-Week1.html"><![CDATA[<p>알고리즘 연습하기로 했다.<br />
 고객님 요구사항 개발만 하다보니 자꾸 뭔가를 잊어가는 것 같다. 종종 풀어서 기록해야지. 나중에 보면 뭔가 계속 했단 사실만으로도 좀 뿌듯할 것 같다. 얼마나 할 수 있을까 3개월 다 채워서 할 수 있는 사람 되고싶다,,,</p>
 
 <h2 id="1-breaking-the-records">1. Breaking the Records</h2>
@@ -545,7 +545,7 @@ gem install jekyll bundler // jekyll bundler 따로도 설치해보고...
 
 cd /volumes/workspace/GitHub\ Blog/e-ul.github.io // 다시 소스있는 폴더로 돌아와서~
 
-jekyll exec jekyll serve // 실행!!!
+bundle exec jekyll serve // 실행!!!
 </code></pre></div></div>
 
 <p>하지만 또 안 되었습니다.<br />
@@ -563,7 +563,7 @@ jekyll exec jekyll serve // 실행!!!
 <p>제가 자꾸 실패해봐서 지치셨나요? 그럴수도 있죠<br />
 하지만 이번엔 진짜입니다.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll exec jekyll serve // 실행!!!
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle exec jekyll serve // 실행!!!
 </code></pre></div></div>
 
 <p>아마 이번에는 떴을거에요…<br />

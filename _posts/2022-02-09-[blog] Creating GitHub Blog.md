@@ -220,7 +220,7 @@ gem install jekyll bundler // jekyll bundler 따로도 설치해보고...
 
 cd /volumes/workspace/GitHub\ Blog/e-ul.github.io // 다시 소스있는 폴더로 돌아와서~
 
-jekyll exec jekyll serve // 실행!!!
+bundle exec jekyll serve // 실행!!!
 ```
 
 하지만 또 안 되었습니다.  
@@ -240,7 +240,7 @@ bundle add webrick
 하지만 이번엔 진짜입니다.
 
 ```
-jekyll exec jekyll serve // 실행!!!
+bundle exec jekyll serve // 실행!!!
 ```
 
 아마 이번에는 떴을거에요...  
