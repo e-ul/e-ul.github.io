@@ -4,6 +4,8 @@ title: GitHub 블로그 만들기🪄
 subtitle: 블로그 하나 만들기가 뭐 이렇게 힘드냐...
 categories: Blog
 tags: [Blog, GitHub, Jekyll, Ruby]
+published: true
+
 ---
 
 
